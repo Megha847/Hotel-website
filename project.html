@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+/* Home Section */
+#home {
+    background: url('https://t4.ftcdn.net/jpg/07/14/18/03/240_F_714180392_d9bpLsagCiKxCIW0d4qq4WovsmBOZ8qt.jpg') no-repeat center center/cover; /* Set the background image */
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Optional: makes the image fixed as you scroll */
+}
+
+#home h2 {
+    font-size: 3em;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+/* Prebooking Section */
+#prebooking {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#prebooking h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#prebooking p {
+    font-size: 1.2em;
+}
+
+.prebooking-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.prebooking-option {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.prebooking-option img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prebooking-option h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.prebooking-option p {
+    font-size: 1.1em;
+}
+/* Food Section */
+#food {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#food h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#food p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.food-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.food-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.food-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.food-item p {
+    font-size: 1.1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Rooms Section */
+#rooms {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#rooms h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.room-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.room {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.room h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.room p {
+    font-size: 1.1em;
+}
+
+.room button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.room button:hover {
+    background-color: #444;
+}
+
+/* About Us Section */
+#about {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+address {
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hotel Paradise</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#prebooking">Prebooking</a></li>
+                    <li><a href="#food">Food</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Hotel Paradise</h2>
+            <p>Your perfect getaway awaits. Experience luxury and comfort with our amazing amenities.</p>
+        </div>
+    </section>
+    <!-- Prebooking Section -->
+    <section id="prebooking">
+        <div class="container">
+            <h2>Prebook Your Stay</h2>
+            <p>Book your room in advance and enjoy special discounts and guaranteed availability.</p>
+            <div class="prebooking-details">
+                <div class="prebooking-option">
+                    <img src="https://media.istockphoto.com/id/1321375119/vector/flat-black-laptop-icon-with-arrow-pointer-or-cursor-mouse-clicking-on-book-online-button.jpg?s=612x612&w=0&k=20&c=Lt2I-DwPGYDQHd6moUDqcwPb1flix3jlOFH0IvdPGRw=" alt="Prebooking Offer 1">
+                    <h3>Advance Booking</h3>
+                    <p>Get up to 20% off when you book at least 30 days in advance.</p>
+                </div>
+                <div class="prebooking-option">
+                    <img src="https://www.easemytrip.com/images/hotel-img/emtbook-23apr-lp2.png">
+                    <h3>Weekend Special</h3>
+                    <p>Special weekend rates for early reservations. Save more!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Provided Section -->
+    <section id="food">
+        <div class="container">
+            <h2>Food & Dining</h2>
+            <p>Indulge in delicious meals prepared by our expert chefs. Here's what we offer:</p>
+            <div class="food-options">
+                <div class="food-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/030/801/515/large_2x/a-tasty-breakfast-buffet-in-a-hotel-photo.jpg" alt="Breakfast">
+                    <h3>Breakfast Buffet</h3>
+                    <p>Start your day with a fresh and delicious buffet, including continental and local options.</p>
+                </div>
+                <div class="food-item">
+                    <img src="https://assets.isu.pub/document-structure/230531093829-aee9644a97c7b53830425f6bcaface9f/v1/57ce705077c4d4c8f431982e177e46c8.jpeg" alt="Lunch">
+                    <h3>Lunch & Dinner</h3>
+                    <p>Enjoy a variety of international and local dishes for lunch and dinner in our restaurant.</p>
+                </div>
+                <div class="food-item">
+                    <img src="https://hotelurso.com/wp-content/uploads/2018/10/comedor-privado-urso-hotel-spa-madrid.jpg" alt="Dinner">
+                    <h3>Private Dining</h3>
+                    <p>For a special experience, enjoy our exclusive private dining service with a personalized menu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rooms Section -->
+    <section id="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="room-list">
+                <div class="room">
+                    <img src="https://www.hotelkalki.com/assets/img/rooms/a-deluxe-2.jpg" alt="Room 1">
+                    <h3>Deluxe Room</h3>
+                    <p>Comfortable and spacious with modern amenities.</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="room">
+                    <img src="https://media.danitel.vn/uploads/2023/07/23c629b5-6f59-40b5-8654-adf775c5b67d/standard-02.jpg?width=1900&height=1267" alt="Room 2">
+                    <h3>Standard Room</h3>
+                    <p>Affordable and cozy for a relaxing stay.</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="room">
+                    <img src="https://img.freepik.com/premium-photo/luxury-hotel-bedroom-suite_604472-90371.jpg" alt="Room 3">
+                    <h3>Suite Room</h3>
+                    <p>Luxurious suite with premium services and views.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Hotel Paradise offers world-class services with a focus on customer satisfaction. Our team is dedicated to providing you with a relaxing and memorable stay.</p>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to contact us!</p>
+            <address>
+                <p>Email: info@hotelparadise.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Paradise Street, Dream City</p>
+            </address>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hotel Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
